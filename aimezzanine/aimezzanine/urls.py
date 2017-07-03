@@ -54,6 +54,11 @@ urlpatterns += [
     # NOTE: Don't forget to import the view function too!
 
     # url("^$", mezzanine.pages.views.page, {"slug": "/"}, name="home"),
+	
+	#Adding url for projects.
+	url("^$/work", direct_to_template, {"template":"work/work.html"}, name="work"),
+    
+    
 
     # HOMEPAGE FOR A BLOG-ONLY SITE
     # -----------------------------
